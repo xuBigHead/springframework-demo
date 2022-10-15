@@ -1,12 +1,10 @@
 package per.springframework.transactional.service.impl;
 
-import com.core.tool.exception.ServiceException;
-import per.springframework.transactional.service.ITransactionalService;
 import lombok.AllArgsConstructor;
-import org.checkerframework.checker.units.qual.A;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.TransactionAspectSupport;
+import per.springframework.transactional.service.ITransactionalService;
 
 /**
  * @author mangmang.xu
@@ -32,7 +30,7 @@ public class TransactionServiceImpl implements ITransactionalService {
             int i = 1 / 0;
         } catch (Exception e) {
             // 将异常抛出
-            throw new ServiceException("error");
+            throw new RuntimeException("error");
         }
     }
 

@@ -1,7 +1,7 @@
 package per.springframework.transactional;
 
-import com.core.tool.constant.StringPool;
-import com.core.tool.result.R;
+import per.springframework.common.R;
+import per.springframework.common.StringPool;
 import per.springframework.transactional.service.ITransactionalService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
